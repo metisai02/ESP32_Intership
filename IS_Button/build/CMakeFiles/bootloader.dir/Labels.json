@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "D:/Study_ESP32/ESP_TestBoardIS/IS_Button/build/CMakeFiles/bootloader"
+			"file" : "/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "D:/Study_ESP32/ESP_TestBoardIS/IS_Button/build/CMakeFiles/bootloader.rule"
+			"file" : "/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "D:/Study_ESP32/ESP_TestBoardIS/IS_Button/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "D:/Study_ESP32/ESP_TestBoardIS/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "D:/Study_ESP32/ESP_TestBoardIS/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "D:/Study_ESP32/ESP_TestBoardIS/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "D:/Study_ESP32/ESP_TestBoardIS/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "D:/Study_ESP32/ESP_TestBoardIS/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "D:/Study_ESP32/ESP_TestBoardIS/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "D:/Study_ESP32/ESP_TestBoardIS/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 

@@ -1,0 +1,124 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400811ac: call_start_cpu1 at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4008276b: lock_acquire_generic at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x400817e2: panic_abort at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087701: esp_system_abort at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/port/esp_system_chip.c:90
+[0m
+[0;33m0x4008cb5a: abort at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4008276b: lock_acquire_generic at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x400828a9: _lock_acquire_recursive at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x40082922: __retarget_lock_acquire_recursive at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400e23f6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:849 (discriminator 2)
+[0m
+[0;33m0x400de6b1: printf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+[0m
+[0;33m0x40082d1c: GpioIsrHandler at /home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/Libs/gpio/gpio.c:11
+[0m
+[0;33m0x400832fa: gpio_isr_loop at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/driver/gpio/gpio.c:462
+[0m
+[0;33m0x4008338a: gpio_intr_service at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/driver/gpio/gpio.c:484
+[0m
+[0;33m0x400830a9: _xt_lowint1 at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x40085947: xt_utils_wait_for_intr at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_hw_support/cpu.c:111
+[0m
+[0;33m0x400d25bb: esp_vApplicationIdleHook at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/freertos_hooks.c:59
+[0m
+[0;33m0x4008885e: prvIdleTask at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4351 (discriminator 1)
+[0m
+[0;33m0x40089df1: vPortTaskWrapper at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400811ac: call_start_cpu1 at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4008276b: lock_acquire_generic at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x400817e2: panic_abort at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087701: esp_system_abort at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/port/esp_system_chip.c:90
+[0m
+[0;33m0x4008cb5a: abort at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4008276b: lock_acquire_generic at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x400828a9: _lock_acquire_recursive at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x40082922: __retarget_lock_acquire_recursive at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400e23f6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:849 (discriminator 2)
+[0m
+[0;33m0x400de6b1: printf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+[0m
+[0;33m0x40082d1c: GpioIsrHandler at /home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/Libs/gpio/gpio.c:11
+[0m
+[0;33m0x400832fa: gpio_isr_loop at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/driver/gpio/gpio.c:462
+[0m
+[0;33m0x4008338a: gpio_intr_service at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/driver/gpio/gpio.c:484
+[0m
+[0;33m0x400830a9: _xt_lowint1 at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x40085947: xt_utils_wait_for_intr at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_hw_support/cpu.c:111
+[0m
+[0;33m0x400d25bb: esp_vApplicationIdleHook at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/freertos_hooks.c:59
+[0m
+[0;33m0x4008885e: prvIdleTask at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4351 (discriminator 1)
+[0m
+[0;33m0x40089df1: vPortTaskWrapper at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400811ac: call_start_cpu1 at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4008276b: lock_acquire_generic at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x400817e2: panic_abort at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087701: esp_system_abort at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/port/esp_system_chip.c:90
+[0m
+[0;33m0x4008cb5a: abort at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x4008276b: lock_acquire_generic at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x400828a9: _lock_acquire_recursive at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x40082922: __retarget_lock_acquire_recursive at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400e23f6: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vfprintf.c:849 (discriminator 2)
+[0m
+[0;33m0x400de6b1: printf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+[0m
+[0;33m0x40082d1c: GpioIsrHandler at /home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_Button/Libs/gpio/gpio.c:11
+[0m
+[0;33m0x400832fa: gpio_isr_loop at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/driver/gpio/gpio.c:462
+[0m
+[0;33m0x4008338a: gpio_intr_service at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/driver/gpio/gpio.c:484
+[0m
+[0;33m0x400830a9: _xt_lowint1 at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x40085947: xt_utils_wait_for_intr at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_hw_support/cpu.c:111
+[0m
+[0;33m0x400d25bb: esp_vApplicationIdleHook at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/freertos_hooks.c:59
+[0m
+[0;33m0x4008885e: prvIdleTask at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4351 (discriminator 1)
+[0m
+[0;33m0x40089df1: vPortTaskWrapper at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400811ac: call_start_cpu1 at /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m
