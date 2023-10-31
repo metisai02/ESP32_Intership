@@ -1,0 +1,27 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_APP/build/bootloader/esp-idf/esptool_py && /home/metisa/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_APP/build/bootloader/bootloader.bin
+Bootloader binary size 0x68a0 bytes. 0x760 bytes (7%) free.
+[2/9] Building C object esp-idf/uart_is/CMakeFiles/__idf_uart_is.dir/uart_is.c.obj
+[3/9] Linking C static library esp-idf/uart_is/libuart_is.a
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/IS_APP.c.obj
+/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_APP/main/IS_APP.c: In function 'TaskMenuHandler':
+/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_APP/main/IS_APP.c:52:12: warning: unused variable 'u32_count_nu3' [-Wunused-variable]
+   52 |   uint32_t u32_count_nu3 = 0;
+      |            ^~~~~~~~~~~~~
+/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_APP/main/IS_APP.c:51:12: warning: unused variable 'u32_count_nu2' [-Wunused-variable]
+   51 |   uint32_t u32_count_nu2 = 0;
+      |            ^~~~~~~~~~~~~
+/home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_APP/main/IS_APP.c:50:12: warning: unused variable 'u32_count_nu1' [-Wunused-variable]
+   50 |   uint32_t u32_count_nu1 = 0;
+      |            ^~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable IS_APP.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.6.2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_APP/build/IS_APP.bin
+[9/9] cd /home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_APP/build/esp-idf/esptool_py && /home/metisa/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/metisa/Documents/ESP32/ESP_WorkSpace/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_APP/build/partition_table/partition-table.bin /home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_APP/build/IS_APP.bin
+IS_APP.bin binary size 0x584a0 bytes. Smallest app partition is 0x100000 bytes. 0xa7b60 bytes (66%) free.
