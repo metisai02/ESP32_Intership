@@ -1,275 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+        <link rel="icon" href="data:," />
+        <title>ESP-INTERSHIP</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            /* General Styles */
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "Montserrat", sans-serif;
+                transition: all 1s ease;
+            }
 
-<head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="icon" href="data:,">
-  <title>ESP-INTERSHIP</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* General Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: "Montserrat", sans-serif;
-      transition: all 1s ease;
-    }
+            /* Body Styles */
+            html {
+                font-family: Arial;
+                display: inline-block;
+                text-align: center;
+            }
 
-    /* Body Styles */
-    html {
-      font-family: Arial;
-      display: inline-block;
-      text-align: center;
-    }
+            p {
+                font-size: 1.2rem;
+            }
 
-    p {
-      font-size: 1.2rem;
-    }
+            .topnav {
+                overflow: hidden;
+                background-color: #2f4468;
+                color: white;
+                font-size: 1.7rem;
+            }
 
-    .topnav {
-      overflow: hidden;
-      background-color: #2f4468;
-      color: white;
-      font-size: 1.7rem;
-    }
+            .content {
+                padding: 20px;
+                font-family: Arial;
+                display: inline-block;
+                text-align: center;
+            }
 
-    .content {
-      padding: 20px;
-      font-family: Arial;
-      display: inline-block;
-      text-align: center;
-    }
+            /* Updated style for .content */
+            .card {
+                background-color: white;
+                box-shadow: 2px 2px 12px 1px rgba(140, 140, 140, 0.5);
+            }
 
-    /* Updated style for .content */
-    .card {
-      background-color: white;
-      box-shadow: 2px 2px 12px 1px rgba(140, 140, 140, .5);
-    }
+            .cards {
+                max-width: 700px;
+                margin: 0 auto;
+                display: grid;
+                grid-gap: 2rem;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
 
-    .cards {
-      max-width: 700px;
-      margin: 0 auto;
-      display: grid;
-      grid-gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
+            .reading {
+                font-size: 2.8rem;
+            }
 
-    .reading {
-      font-size: 2.8rem;
-    }
+            .packet {
+                color: #bebebe;
+            }
 
-    .packet {
-      color: #bebebe;
-    }
+            .card.temperature {
+                color: #fd7e14;
+            }
 
-    .card.temperature {
-      color: #fd7e14;
-    }
+            .card.humidity {
+                color: #1b78e2;
+            }
 
-    .card.humidity {
-      color: #1b78e2;
-    }
+            /* Switch Styles */
+            input[type="checkbox"] {
+                display: none;
+            }
 
-    /* Switch Styles */
-    input[type="checkbox"] {
-      display: none;
-    }
+            .switch-btn {
+                width: 100px;
+                height: 30px;
+                background-color: #c5ccd3;
+                border: 4px solid #bec5cc;
+                border-radius: 30px;
+                padding: 6px;
+                margin-bottom: 20px;
+                /* Add spacing between toggle switches */
+            }
 
-    .switch-btn {
-      width: 100px;
-      height: 30px;
-      background-color: #C5CCD3;
-      border: 4px solid #BEC5CC;
-      border-radius: 30px;
-      padding: 6px;
-      margin-bottom: 20px;
-      /* Add spacing between toggle switches */
-    }
+            label {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #f8f8f9;
+                border-radius: 30px;
+                overflow: hidden;
+                cursor: pointer;
+            }
 
-    label {
-      width: 30px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f8f8f9;
-      border-radius: 30px;
-      overflow: hidden;
-      cursor: pointer;
-    }
+            .icons {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                transform: translate(-11px, 19px) rotate(120deg);
+                user-select: none;
+                color: #17193f;
+            }
 
-    .icons {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      transform: translate(-11px, 19px) rotate(120deg);
-      user-select: none;
-      color: #17193F;
-    }
+            /* Styles for checked toggle switch buttons */
+            input[type="checkbox"][id="switch1"]:checked ~ .switch-btn-1,
+            input[type="checkbox"][id="switch2"]:checked ~ .switch-btn-2,
+            input[type="checkbox"][id="switch3"]:checked ~ .switch-btn-3 {
+                border: 4px solid #2e3052;
+                background-color: #7635dc;
+            }
 
-    /* Styles for checked toggle switch buttons */
-    input[type="checkbox"][id="switch1"]:checked~.switch-btn-1,
-    input[type="checkbox"][id="switch2"]:checked~.switch-btn-2,
-    input[type="checkbox"][id="switch3"]:checked~.switch-btn-3 {
-      border: 4px solid #2e3052;
-      background-color: #7635DC;
-    }
+            /* Styles for checked toggle switch button labels and icons */
+            input[type="checkbox"][id="switch1"]:checked ~ .switch-btn-1 label,
+            input[type="checkbox"][id="switch2"]:checked ~ .switch-btn-2 label,
+            input[type="checkbox"][id="switch3"]:checked ~ .switch-btn-3 label {
+                transform: translateX(calc(100px - 30px));
+                box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+            }
 
-    /* Styles for checked toggle switch button labels and icons */
-    input[type="checkbox"][id="switch1"]:checked~.switch-btn-1 label,
-    input[type="checkbox"][id="switch2"]:checked~.switch-btn-2 label,
-    input[type="checkbox"][id="switch3"]:checked~.switch-btn-3 label {
-      transform: translateX(calc(100px - 30px));
-      box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
-    }
+            input[type="checkbox"][id="switch1"]:checked
+                ~ .switch-btn-1
+                .icons-1,
+            input[type="checkbox"][id="switch2"]:checked
+                ~ .switch-btn-2
+                .icons-2,
+            input[type="checkbox"][id="switch3"]:checked
+                ~ .switch-btn-3
+                .icons-3 {
+                transform: translateX(-20px);
+            }
 
-    input[type="checkbox"][id="switch1"]:checked~.switch-btn-1 .icons-1,
-    input[type="checkbox"][id="switch2"]:checked~.switch-btn-2 .icons-2,
-    input[type="checkbox"][id="switch3"]:checked~.switch-btn-3 .icons-3 {
-      transform: translateX(-20px);
-    }
+            /* Toggle Switch Container Styles */
+            .toggle-switch-container {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
 
-    /* Toggle Switch Container Styles */
-    .toggle-switch-container {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+            /* Rest of your CSS styles */
+        </style>
+    </head>
 
-
-    /* Rest of your CSS styles */
-  </style>
-</head>
-
-<body>
-  <div class="topnav">
-    <h2>ESP32-INTERSHIP</h2>
-  </div>
-  <div class="content">
-    <div class="cards">
-      <div class="card temperature">
-        <h3><i class="fas fa-thermometer-half"></i> TEMPERATURE</h3>
-        <p><span class="reading"><span id="t1"></span> &deg;C</span></p>
-        <p class="packet">Reading ID: <span id="rt1"></span></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="toggle-switch-container">
-    <h4>Toggle Switch 1</h4>
-    <input type="checkbox" class="switch" id="switch1" onclick="myFunction1()">
-    <div class="switch-btn switch-btn-1">
-      <label for="switch1">
-        <div class="icons icons-1">
-          <span class="material-icons-round">wb_sunny</span>
-          <span class="material-icons-round">nights_stay</span>
+    <body>
+        <div class="topnav">
+            <h2>ESP32-INTERSHIP</h2>
         </div>
-      </label>
-    </div>
-
-    <h4>Toggle Switch 2</h4>
-    <input type="checkbox" class="switch" id="switch2" onclick="myFunction2()">
-    <div class="switch-btn switch-btn-2">
-      <label for="switch2">
-        <div class="icons icons-2">
-          <span class="material-icons-round">wb_sunny</span>
-          <span class="material-icons-round">nights_stay</span>
+        <div class="content">
+            <div class="cards">
+                <div class="card temperature">
+                    <h3><i class="fas fa-thermometer-half"></i> TEMPERATURE</h3>
+                    <p>
+                        <span class="reading"
+                            ><span id="t1"></span> &deg;C</span
+                        >
+                    </p>
+                    <p class="packet">Reading ID: <span id="rt1"></span></p>
+                </div>
+            </div>
         </div>
-      </label>
-    </div>
 
-    <h4>Toggle Switch 3</h4>
-    <input type="checkbox" class="switch" id="switch3" onclick="myFunction3()">
-    <div class="switch-btn switch-btn-3">
-      <label for="switch3">
-        <div class="icons icons-3">
-          <span class="material-icons-round">wb_sunny</span>
-          <span class="material-icons-round">nights_stay</span>
+        <div class="toggle-switch-container">
+            <h4>Toggle Switch 1</h4>
+            <input
+                type="checkbox"
+                class="switch"
+                id="switch1"
+                onclick="myFunction1()"
+            />
+            <div class="switch-btn switch-btn-1">
+                <label for="switch1">
+                    <div class="icons icons-1">
+                        <span class="material-icons-round">wb_sunny</span>
+                        <span class="material-icons-round">nights_stay</span>
+                    </div>
+                </label>
+            </div>
+
+            <h4>Toggle Switch 2</h4>
+            <input
+                type="checkbox"
+                class="switch"
+                id="switch2"
+                onclick="myFunction2()"
+            />
+            <div class="switch-btn switch-btn-2">
+                <label for="switch2">
+                    <div class="icons icons-2">
+                        <span class="material-icons-round">wb_sunny</span>
+                        <span class="material-icons-round">nights_stay</span>
+                    </div>
+                </label>
+            </div>
+
+            <h4>Toggle Switch 3</h4>
+            <input
+                type="checkbox"
+                class="switch"
+                id="switch3"
+                onclick="myFunction3()"
+            />
+            <div class="switch-btn switch-btn-3">
+                <label for="switch3">
+                    <div class="icons icons-3">
+                        <span class="material-icons-round">wb_sunny</span>
+                        <span class="material-icons-round">nights_stay</span>
+                    </div>
+                </label>
+            </div>
         </div>
-      </label>
-    </div>
-  </div>
 
-  <script>
-    // JavaScript code if needed
-    var xhttp1 = new XMLHttpRequest();
-    var switch1 = document.getElementById("switch1");
-    var switch2 = document.getElementById("switch2");
-    var switch3 = document.getElementById("switch3");
+        <script>
+            // JavaScript code if needed
+            var xhttp1 = new XMLHttpRequest();
+            var switch1 = document.getElementById("switch1");
+            var switch2 = document.getElementById("switch2");
+            var switch3 = document.getElementById("switch3");
 
-    xhttp1.onreadystatechange = function () {
-      const obj = JSON.parse(this.responseText);
-      var element1 = document.getElementById('t1');
-      element1.innerText = obj.temperature;
-    }
+            xhttp1.onreadystatechange = function () {
+                const obj = JSON.parse(this.responseText);
+                var element1 = document.getElementById("t1");
+                element1.innerText = obj.temperature;
+            };
 
-    // JavaScript code
-    document.addEventListener("DOMContentLoaded", function () {
-      var h4Elements = document.querySelectorAll("h4");
-      var body = document.body;
+            // JavaScript code
+            document.addEventListener("DOMContentLoaded", function () {
+                var h4Elements = document.querySelectorAll("h4");
+                var body = document.body;
 
-      // Function to update the background color
-      function updateBackgroundColor() {
-        if (switch1.checked && switch2.checked && switch3.checked) {
-          body.style.backgroundColor = "#17193F";
-          h4Elements.forEach(function (h4) {
-            h4.style.color = "white"; // Change to your desired color
-          });// Change to your desired color
-        } else {
-          body.style.backgroundColor = "initial";
-          h4Elements.forEach(function (h4) {
-            h4.style.color = "initial"; // Reset to default color
-          });// Reset to default background color
-        }
-      }
-      // Add event listeners to the switches
-      switch1.addEventListener("change", updateBackgroundColor);
-      switch2.addEventListener("change", updateBackgroundColor);
-      switch3.addEventListener("change", updateBackgroundColor);
-    });
+                // Function to update the background color
+                function updateBackgroundColor() {
+                    if (switch1.checked && switch2.checked && switch3.checked) {
+                        body.style.backgroundColor = "#17193F";
+                        h4Elements.forEach(function (h4) {
+                            h4.style.color = "white"; // Change to your desired color
+                        }); // Change to your desired color
+                    } else {
+                        body.style.backgroundColor = "initial";
+                        h4Elements.forEach(function (h4) {
+                            h4.style.color = "initial"; // Reset to default color
+                        }); // Reset to default background color
+                    }
+                }
+                // Add event listeners to the switches
+                switch1.addEventListener("change", updateBackgroundColor);
+                switch2.addEventListener("change", updateBackgroundColor);
+                switch3.addEventListener("change", updateBackgroundColor);
+            });
 
-    setInterval(function () {
-      xhttp1.open("GET", "/getdata", true);
-      xhttp1.send();
-    }, 1000);
-    function myFunction1() {
-      if (switch1.checked) {
-        xhttp1.open("POST", "/sw1", true);
-        xhttp1.send("1");
-      }
-      else {
-        xhttp1.open("POST", "/sw1", true);
-        xhttp1.send("2");
-      }
-    }
-    function myFunction2() {
-      if (switch2.checked) {
-        xhttp1.open("POST", "/sw2", true);
-        xhttp1.send("1");
-      }
-      else {
-        xhttp1.open("POST", "/sw2", true);
-        xhttp1.send("2");
-      }
-    }
-    function myFunction3() {
-      if (switch3.checked) {
-        xhttp1.open("POST", "/sw3", true);
-        xhttp1.send("1");
-      }
-      else {
-        xhttp1.open("POST", "/sw3", true);
-        xhttp1.send("2");
-      }
-    }
-
-  </script>
-</body>
-
+            setInterval(function () {
+                xhttp1.open("GET", "/getdata", true);
+                xhttp1.send();
+            }, 1000);
+            function myFunction1() {
+                if (switch1.checked) {
+                    xhttp1.open("POST", "/sw1", true);
+                    xhttp1.send("1");
+                } else {
+                    xhttp1.open("POST", "/sw1", true);
+                    xhttp1.send("2");
+                }
+            }
+            function myFunction2() {
+                if (switch2.checked) {
+                    xhttp1.open("POST", "/sw2", true);
+                    xhttp1.send("1");
+                } else {
+                    xhttp1.open("POST", "/sw2", true);
+                    xhttp1.send("2");
+                }
+            }
+            function myFunction3() {
+                if (switch3.checked) {
+                    xhttp1.open("POST", "/sw3", true);
+                    xhttp1.send("1");
+                } else {
+                    xhttp1.open("POST", "/sw3", true);
+                    xhttp1.send("2");
+                }
+            }
+        </script>
+    </body>
 </html>

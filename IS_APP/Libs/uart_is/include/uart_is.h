@@ -1,8 +1,12 @@
+#ifndef __lINUART_H
+#define __lINUART_H
 #include <stdio.h>
 #include "driver/gpio.h"
 #include "esp_log.h"
-#define BUTTON_1 17
-#define BUTTON_2 16
+#include "main.h"
+#include "driver/uart.h"
+#define BUTTON_1 35
+#define BUTTON_2 34
 #define BUTTON_3 4
 
 #define RELAY_1 12
@@ -15,7 +19,7 @@
 
 #define BUF_SIZE (1024)
 #define RD_BUF_SIZE (BUF_SIZE)
-#define TXD_PIN (GPIO_NUM_34)
-#define RXD_PIN (GPIO_NUM_35)
-
+#define TXD_PIN (GPIO_NUM_17)
+#define RXD_PIN (GPIO_NUM_16)
+#endif
 void uart_init();

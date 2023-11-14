@@ -1,0 +1,113 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM10 instead...[0m
+[0;33m--- idf_monitor on \\.\COM10 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814dc: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4000c26c: memcmp in ROM
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4000c269: memcmp in ROM
+[0m
+[0;33m0x4013f059: wpa_bss_get at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/wpa_supplicant/src/common/bss.c:64
+[0m
+[0;33m0x4013f318: wpa_bss_update_scan_res at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/wpa_supplicant/src/common/bss.c:325
+[0m
+[0;33m0x4013f55e: esp_handle_beacon_probe at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/wpa_supplicant/esp_supplicant/src/esp_scan.c:167
+[0m
+[0;33m0x40133ad3: ieee80211_handle_rx_frm at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/wpa_supplicant/esp_supplicant/src/esp_common.c:265
+[0m
+[0;33m0x40100cb9: scan_get_type at ??:?
+[0m
+[0;33m0x40100dfe: scan_get_type at ??:?
+[0m
+[0;33m0x40102181: scan_parse_beacon at ??:?
+[0m
+[0;33m0x40104c09: sta_recv_mgmt at ??:?
+[0m
+[0;33m0x40091589: sta_input at ??:?
+[0m
+[0;33m0x40091639: sta_rx_cb at ??:?
+[0m
+[0;33m0x400954a9: ppRxPkt at ??:?
+[0m
+[0;33m0x40093254: ppTask at ??:?
+[0m
+[0;33m0x4008cff9: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814dc: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4000c26c: memcmp in ROM
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4000c269: memcmp in ROM
+[0m
+[0;33m0x4013f059: wpa_bss_get at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/wpa_supplicant/src/common/bss.c:64
+[0m
+[0;33m0x4013f318: wpa_bss_update_scan_res at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/wpa_supplicant/src/common/bss.c:325
+[0m
+[0;33m0x4013f55e: esp_handle_beacon_probe at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/wpa_supplicant/esp_supplicant/src/esp_scan.c:167
+[0m
+[0;33m0x40133ad3: ieee80211_handle_rx_frm at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/wpa_supplicant/esp_supplicant/src/esp_common.c:265
+[0m
+[0;33m0x40100cb9: scan_get_type at ??:?
+[0m
+[0;33m0x40100dfe: scan_get_type at ??:?
+[0m
+[0;33m0x40102181: scan_parse_beacon at ??:?
+[0m
+[0;33m0x40104c09: sta_recv_mgmt at ??:?
+[0m
+[0;33m0x40091589: sta_input at ??:?
+[0m
+[0;33m0x40091639: sta_rx_cb at ??:?
+[0m
+[0;33m0x400954a9: ppRxPkt at ??:?
+[0m
+[0;33m0x40093254: ppTask at ??:?
+[0m
+[0;33m0x4008cff9: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814dc: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4000c26c: memcmp in ROM
+[0m
+[0;33m0x400865c8: esp_phy_common_clock_enable at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_phy/src/phy_init.c:208
+[0m
+[0;33m0x4000c46c: memset in ROM
+[0m
+[0;33m0x4000c477: memset in ROM
+[0m
+[0;33m0x4000c269: memcmp in ROM
+[0m
+[0;33m0x40101959: check_bss_queue at ??:?
+[0m
+[0;33m0x40101f9d: scan_parse_beacon at ??:?
+[0m
+[0;33m0x40104c09: sta_recv_mgmt at ??:?
+[0m
+[0;33m0x40091589: sta_input at ??:?
+[0m
+[0;33m0x40091639: sta_rx_cb at ??:?
+[0m
+[0;33m0x400954a9: ppRxPkt at ??:?
+[0m
+[0;33m0x40093254: ppTask at ??:?
+[0m
+[0;33m0x4008cff9: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

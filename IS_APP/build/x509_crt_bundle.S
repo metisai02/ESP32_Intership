@@ -1,4 +1,4 @@
-/* * Data converted from /home/metisa/Documents/ESP32/ESP_WorkSpace/ESP32_Intership/IS_APP/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/ESP32_Intership/IS_APP/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

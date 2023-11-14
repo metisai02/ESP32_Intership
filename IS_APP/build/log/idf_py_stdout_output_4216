@@ -1,0 +1,73 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP32_Intership\IS_APP\build\bootloader\esp-idf\esptool_py && D:\ESP32_Intership\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP32_Intership/IS_APP/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/IS_APP.c.obj
+D:/ESP32_Intership/IS_APP/main/IS_APP.c: In function 'TaskMenuHandler':
+D:/ESP32_Intership/IS_APP/main/IS_APP.c:55:14: warning: unused variable 'u32_count_nu3' [-Wunused-variable]
+   55 |     uint32_t u32_count_nu3 = 0;
+      |              ^~~~~~~~~~~~~
+D:/ESP32_Intership/IS_APP/main/IS_APP.c:54:14: warning: unused variable 'u32_count_nu2' [-Wunused-variable]
+   54 |     uint32_t u32_count_nu2 = 0;
+      |              ^~~~~~~~~~~~~
+D:/ESP32_Intership/IS_APP/main/IS_APP.c:53:14: warning: unused variable 'u32_count_nu1' [-Wunused-variable]
+   53 |     uint32_t u32_count_nu1 = 0;
+      |              ^~~~~~~~~~~~~
+[3/10] Building C object esp-idf/uart_is/CMakeFiles/__idf_uart_is.dir/uart_is.c.obj
+[4/10] Linking C static library esp-idf\uart_is\libuart_is.a
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable IS_APP.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP32_Intership/IS_APP/build/IS_APP.bin
+[9/10] cmd.exe /C "cd /D D:\ESP32_Intership\IS_APP\build\esp-idf\esptool_py && D:\ESP32_Intership\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32_Intership/IS_APP/build/partition_table/partition-table.bin D:/ESP32_Intership/IS_APP/build/IS_APP.bin"
+IS_APP.bin binary size 0x5adb0 bytes. Smallest app partition is 0x100000 bytes. 0xa5250 bytes (65%) free.
+[9/10] cmd.exe /C "cd /D D:\ESP32_Intership\Espressif\frameworks\esp-idf-v5.1.1\components\esptool_py && D:\ESP32_Intership\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1 -D SERIAL_TOOL=D:/ESP32_Intership/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/ESP32_Intership/IS_APP/build -P D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM14 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 IS_APP.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev1
+Serial port COM14
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b8:d6:1a:be:c0:a0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0006afff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26640 bytes to 16690...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768d... (100 %)
+Wrote 26640 bytes (16690 compressed) at 0x00001000 in 0.9 seconds (effective 245.1 kbit/s)...
+Hash of data verified.
+Compressed 372144 bytes to 210241...
+Writing at 0x00010000... (7 %)
+Writing at 0x0001ce01... (15 %)
+Writing at 0x0002806b... (23 %)
+Writing at 0x0002d9c7... (30 %)
+Writing at 0x00033713... (38 %)
+Writing at 0x00039579... (46 %)
+Writing at 0x0003f052... (53 %)
+Writing at 0x000446dc... (61 %)
+Writing at 0x00049b1f... (69 %)
+Writing at 0x0004f3e0... (76 %)
+Writing at 0x00055382... (84 %)
+Writing at 0x0005e0e0... (92 %)
+Writing at 0x00065fdb... (100 %)
+Wrote 372144 bytes (210241 compressed) at 0x00010000 in 5.2 seconds (effective 571.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 314.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

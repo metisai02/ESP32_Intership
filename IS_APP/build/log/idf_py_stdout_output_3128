@@ -1,0 +1,428 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 31 2023 23:19:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=289fch (166396) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=00038a24 vaddr=3ffb0000 size=03c70h ( 15472) load[0m
+[0;32mI (171) esp_image: segment 2: paddr=0003c69c vaddr=40080000 size=0397ch ( 14716) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=977e0h (620512) map[0m
+[0;32mI (403) esp_image: segment 4: paddr=000d7808 vaddr=4008397c size=138b4h ( 80052) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (460) cpu_start: Pro cpu up.[0m
+[0;32mI (460) cpu_start: Starting app cpu, entry point is 0x400814e0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (478) cpu_start: Pro cpu start user code[0m
+[0;32mI (478) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (478) cpu_start: Application information:[0m
+[0;32mI (483) cpu_start: Project name:     IS_APP[0m
+[0;32mI (488) cpu_start: App version:      ed7a01d-dirty[0m
+[0;32mI (493) cpu_start: Compile time:     Nov  7 2023 20:29:38[0m
+[0;32mI (499) cpu_start: ELF file SHA256:  fef45875...[0m
+[0;32mI (505) cpu_start: ESP-IDF:          v5.1.1-dirty[0m
+[0;32mI (510) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (515) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (520) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (524) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (532) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (538) heap_init: At 3FFB8400 len 00027C00 (159 KiB): DRAM[0m
+[0;32mI (544) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (550) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (557) heap_init: At 40097230 len 00008DD0 (35 KiB): IRAM[0m
+[0;32mI (564) spi_flash: detected chip: generic[0m
+[0;32mI (567) spi_flash: flash io: dio[0m
+[0;32mI (572) app_start: Starting scheduler on CPU0[0m
+[0;32mI (576) app_start: Starting scheduler on CPU1[0m
+[0;32mI (576) main_task: Started on CPU0[0m
+[0;32mI (586) main_task: Calling app_main()[0m
+[0;32mI (616) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (666) SSD1306: OLED configured successfully[0m
+[0;32mI (696) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (696) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;31mE (706) gpio: gpio_install_isr_service(499): GPIO isr service already installed[0m
+[0;32mI (716) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;31mE (726) gpio: gpio_install_isr_service(499): GPIO isr service already installed[0m
+[0;32mI (736) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (746) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (756) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (756) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (766) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (776) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (806) wifi:wifi driver task: 3ffc22c4, prio:23, stack:6656, core=0
+I (816) wifi:wifi firmware version: ce9244d
+I (816) wifi:wifi certification version: v7.0
+I (816) wifi:config NVS flash: enabled
+I (816) wifi:config nano formating: disabled
+I (826) wifi:Init data frame dynamic rx buffer num: 32
+I (826) wifi:Init management frame dynamic rx buffer num: 32
+I (836) wifi:Init management short buffer num: 32
+I (836) wifi:Init dynamic tx buffer num: 32
+I (836) wifi:Init static rx buffer size: 1600
+I (846) wifi:Init static rx buffer num: 10
+I (846) wifi:Init dynamic rx buffer num: 32
+[0;32mI (856) wifi_init: rx ba win: 6[0m
+[0;32mI (856) wifi_init: tcpip mbox: 32[0m
+[0;32mI (856) wifi_init: udp mbox: 6[0m
+[0;32mI (866) wifi_init: tcp mbox: 6[0m
+[0;32mI (866) wifi_init: tcp tx win: 5744[0m
+[0;32mI (876) wifi_init: tcp rx win: 5744[0m
+[0;32mI (876) wifi_init: tcp mss: 1440[0m
+[0;32mI (876) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (886) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (896) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (986) wifi:mode : sta (b8:d6:1a:be:c0:a0)
+I (986) wifi:enable tsf
+WIFI_EVENT_STA_START
+E (986) wifi:sta is connecting, return error
+I (1046) smartconfig: SC version: V3.0.1
+SMARTCONFIG START CONFIG
+suscess to transmission
+suscess to transmission
+suscess to transmission
+I (5876) wifi:ic_enable_sniffer
+I (5876) smartconfig: Start to find channel...
+SC_EVENT_SCAN_DONE
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+[0;32mI (707386) RX_TASK: Read 29 bytes: ''[0m
+[0;32mI (753116) RX_TASK: Read 1 bytes: ''[0m
+[0;32mI (753286) RX_TASK: Read 7 bytes: ''[0m
+[0;32mI (759746) RX_TASK: Read 1 bytes: ''[0m
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+[0;32mI (1437026) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1437196) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1437416) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1437616) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1437956) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1438296) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1438466) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1438636) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1438806) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1438976) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1439146) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1439316) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1439486) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1439656) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1439826) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1439996) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1440846) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1441016) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1441186) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1441356) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1441526) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1441696) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1441876) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1442046) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1442226) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1442416) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1443776) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1443946) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1444146) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1444316) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1444506) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1444686) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1444866) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1445046) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1445216) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1445406) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1445596) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+[0;32mI (1460556) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1460726) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1460896) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1461066) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1461236) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1461406) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1462096) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1462286) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+[0;32mI (1550686) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1551026) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1551536) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1551706) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1551876) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1552556) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1553406) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1553606) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1553946) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1555006) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1555346) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1556196) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1556416) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1557096) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1557266) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1557786) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1557976) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1558536) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1558746) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1559426) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1559606) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1560176) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1560366) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1560876) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1561386) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1561896) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1562266) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1563316) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1563506) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1564066) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1564576) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1565116) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1565626) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1566136) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1566306) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1566476) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1566646) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1566816) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1566986) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1567166) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1567366) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1567556) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1567756) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1567946) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1568126) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1568316) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1568536) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1568756) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1569436) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1570156) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1570336) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1571186) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1571546) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1572056) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1572566) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1572926) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1573606) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1665066) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1665236) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1665406) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1665576) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1665746) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1665916) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1666086) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1666256) RX_TASK: Read 10 bytes: 'RELAY1_OFF'[0m
+[0;32mI (1666426) RX_TASK: Read 9 bytes: 'RELAY1_ON'[0m
+[0;32mI (1666766) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1666936) RX_TASK: Read 10 bytes: 'RELAY2_OFF'[0m
+[0;32mI (1667106) RX_TASK: Read 9 bytes: 'RELAY2_ON'[0m
+[0;32mI (1667616) RX_TASK: Read 9 bytes: 'RELAY3_ON'[0m
+[0;32mI (1667786) RX_TASK: Read 10 bytes: 'RELAY3_OFF'[0m
+[0;32mI (1682266) RX_TASK: Read 395 bytes: ''[0m
+[0;32mI (1721476) RX_TASK: Read 20 bytes: ''[0m
+[0;32mI (1723016) RX_TASK: Read 123 bytes: ''[0m
+[0;32mI (1723976) RX_TASK: Read 69 bytes: ''[0m
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+[0;32mI (1734386) RX_TASK: Read 234 bytes: ''[0m
+suscess to transmission
+[0;32mI (1736026) RX_TASK: Read 90 bytes: ''[0m
+[0;32mI (1736246) RX_TASK: Read 24 bytes: ''[0m
+[0;32mI (1736606) RX_TASK: Read 12 bytes: ''[0m
+[0;32mI (1737456) RX_TASK: Read 5 bytes: ''[0m
+suscess to transmission
+[0;32mI (1738136) RX_TASK: Read 28 bytes: ''[0m
+[0;32mI (1738306) RX_TASK: Read 5 bytes: ''[0m
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+[0;32mI (1742096) RX_TASK: Read 6 bytes: ''[0m
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+[0;32mI (1743816) RX_TASK: Read 39 bytes: ''[0m
+suscess to transmission
+[0;32mI (1744346) RX_TASK: Read 7 bytes: ''[0m
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+[0;32mI (1764776) RX_TASK: Read 12 bytes: ''[0m
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+[0;32mI (1766316) RX_TASK: Read 6 bytes: ''[0m
+suscess to transmission
+suscess to transmission
+[0;32mI (1766976) RX_TASK: Read 27 bytes: ''[0m
+suscess to transmission
+[0;32mI (1767316) RX_TASK: Read 15 bytes: ''[0m
+[0;32mI (1767496) RX_TASK: Read 12 bytes: ''[0m
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+[0;32mI (4507556) RX_TASK: Read 5 bytes: ''[0m
+[0;32mI (4508066) RX_TASK: Read 6 bytes: '�'[0m
+[0;32mI (4509936) RX_TASK: Read 2 bytes: ''[0m
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission
+[0;32mI (4530586) RX_TASK: Read 6 bytes: ''[0m
+[0;32mI (4536706) RX_TASK: Read 4 bytes: '��'[0m
+suscess to transmission
+suscess to transmission
+suscess to transmission
+suscess to transmission

@@ -1,0 +1,261 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM14 instead...[0m
+[0;33m--- idf_monitor on \\.\COM14 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081ac2: panic_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087b11: esp_system_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008d659: __assert_func at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/assert.c:81
+[0m
+[0;33m0x4008c5f6: tlsf_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/tlsf/tlsf.c:1119 (discriminator 1)
+[0m
+[0;33m0x4008c4a0: multi_heap_free_impl at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/multi_heap.c:231
+[0m
+[0;33m0x40082382: heap_caps_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/heap_caps.c:388
+[0m
+[0;33m0x4008d689: free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7d6f: UartTaskHanlder at D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:57
+[0m
+[0;33m0x4008a305: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081ac2: panic_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087b11: esp_system_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008d659: __assert_func at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/assert.c:81
+[0m
+[0;33m0x4008c5f6: tlsf_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/tlsf/tlsf.c:1119 (discriminator 1)
+[0m
+[0;33m0x4008c4a0: multi_heap_free_impl at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/multi_heap.c:231
+[0m
+[0;33m0x40082382: heap_caps_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/heap_caps.c:388
+[0m
+[0;33m0x4008d689: free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7d6f: UartTaskHanlder at D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:57
+[0m
+[0;33m0x4008a305: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081ac2: panic_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087b11: esp_system_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008d659: __assert_func at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/assert.c:81
+[0m
+[0;33m0x4008c5f6: tlsf_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/tlsf/tlsf.c:1119 (discriminator 1)
+[0m
+[0;33m0x4008c4a0: multi_heap_free_impl at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/multi_heap.c:231
+[0m
+[0;33m0x40082382: heap_caps_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/heap_caps.c:388
+[0m
+[0;33m0x4008d689: free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7d6f: UartTaskHanlder at D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:57
+[0m
+[0;33m0x4008a305: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081ac2: panic_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087b11: esp_system_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008d659: __assert_func at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/assert.c:81
+[0m
+[0;33m0x4008c5f6: tlsf_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/tlsf/tlsf.c:1119 (discriminator 1)
+[0m
+[0;33m0x4008c4a0: multi_heap_free_impl at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/multi_heap.c:231
+[0m
+[0;33m0x40082382: heap_caps_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/heap_caps.c:388
+[0m
+[0;33m0x4008d689: free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7d6f: UartTaskHanlder at D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:57
+[0m
+[0;33m0x4008a305: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081ac2: panic_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087b11: esp_system_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008d659: __assert_func at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/assert.c:81
+[0m
+[0;33m0x4008c5f6: tlsf_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/tlsf/tlsf.c:1119 (discriminator 1)
+[0m
+[0;33m0x4008c4a0: multi_heap_free_impl at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/multi_heap.c:231
+[0m
+[0;33m0x40082382: heap_caps_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/heap_caps.c:388
+[0m
+[0;33m0x4008d689: free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7d6f: UartTaskHanlder at D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:57
+[0m
+[0;33m0x4008a305: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081ac2: panic_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087b11: esp_system_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008d659: __assert_func at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/assert.c:81
+[0m
+[0;33m0x4008c5f6: tlsf_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/tlsf/tlsf.c:1119 (discriminator 1)
+[0m
+[0;33m0x4008c4a0: multi_heap_free_impl at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/multi_heap.c:231
+[0m
+[0;33m0x40082382: heap_caps_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/heap_caps.c:388
+[0m
+[0;33m0x4008d689: free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7d6f: UartTaskHanlder at D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:57
+[0m
+[0;33m0x4008a305: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081ac2: panic_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087b11: esp_system_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008d659: __assert_func at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/assert.c:81
+[0m
+[0;33m0x4008c5f6: tlsf_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/tlsf/tlsf.c:1119 (discriminator 1)
+[0m
+[0;33m0x4008c4a0: multi_heap_free_impl at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/multi_heap.c:231
+[0m
+[0;33m0x40082382: heap_caps_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/heap_caps.c:388
+[0m
+[0;33m0x4008d689: free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7d6f: UartTaskHanlder at D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:57
+[0m
+[0;33m0x4008a305: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081ac2: panic_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087b11: esp_system_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008d659: __assert_func at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/assert.c:81
+[0m
+[0;33m0x4008c5f6: tlsf_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/tlsf/tlsf.c:1119 (discriminator 1)
+[0m
+[0;33m0x4008c4a0: multi_heap_free_impl at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/multi_heap.c:231
+[0m
+[0;33m0x40082382: heap_caps_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/heap_caps.c:388
+[0m
+[0;33m0x4008d689: free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7d6f: UartTaskHanlder at D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:57
+[0m
+[0;33m0x4008a305: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081ac2: panic_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087b11: esp_system_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008d659: __assert_func at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/assert.c:81
+[0m
+[0;33m0x4008c5f6: tlsf_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/tlsf/tlsf.c:1119 (discriminator 1)
+[0m
+[0;33m0x4008c4a0: multi_heap_free_impl at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/multi_heap.c:231
+[0m
+[0;33m0x40082382: heap_caps_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/heap_caps.c:388
+[0m
+[0;33m0x4008d689: free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7d6f: UartTaskHanlder at D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:57
+[0m
+[0;33m0x4008a305: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl-T Ctrl-X to exit.[0m
+[0;33m0x40081ac2: panic_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087b11: esp_system_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008d659: __assert_func at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/assert.c:81
+[0m
+[0;33m0x4008c5f6: tlsf_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/tlsf/tlsf.c:1119 (discriminator 1)
+[0m
+[0;33m0x4008c4a0: multi_heap_free_impl at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/multi_heap.c:231
+[0m
+[0;33m0x40082382: heap_caps_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/heap_caps.c:388
+[0m
+[0;33m0x4008d689: free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7d6f: UartTaskHanlder at D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:57
+[0m
+[0;33m0x4008a305: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081ac2: panic_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/panic.c:452
+[0m
+[0;33m0x40087b11: esp_system_abort at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008d659: __assert_func at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/assert.c:81
+[0m
+[0;33m0x4008c5f6: tlsf_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/tlsf/tlsf.c:1119 (discriminator 1)
+[0m
+[0;33m0x4008c4a0: multi_heap_free_impl at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/multi_heap.c:231
+[0m
+[0;33m0x40082382: heap_caps_free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/heap/heap_caps.c:388
+[0m
+[0;33m0x4008d689: free at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/newlib/heap.c:39
+[0m
+[0;33m0x400d7d6f: UartTaskHanlder at D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:57
+[0m
+[0;33m0x4008a305: vPortTaskWrapper at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008145c: call_start_cpu1 at D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/esp_system/port/cpu_start.c:154
+[0m
+[0m
+Traceback (most recent call last):
+  File "D:\ESP32_Intership\Espressif\frameworks\esp-idf-v5.1.1\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

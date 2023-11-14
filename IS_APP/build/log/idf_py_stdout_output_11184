@@ -1,0 +1,19 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP32_Intership\IS_APP\build\bootloader\esp-idf\esptool_py && D:\ESP32_Intership\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP32_Intership/IS_APP/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/7] Building C object esp-idf/uart_is/CMakeFiles/__idf_uart_is.dir/uart_is.c.obj
+D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c: In function 'UartTaskHanlder':
+D:/ESP32_Intership/IS_APP/Libs/uart_is/uart_is.c:32:14: warning: unused variable 'gpio_pin' [-Wunused-variable]
+   32 |     uint32_t gpio_pin = 0;
+      |              ^~~~~~~~
+[3/7] Linking C static library esp-idf\uart_is\libuart_is.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable IS_APP.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP32_Intership/IS_APP/build/IS_APP.bin
+[7/7] cmd.exe /C "cd /D D:\ESP32_Intership\IS_APP\build\esp-idf\esptool_py && D:\ESP32_Intership\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP32_Intership/Espressif/frameworks/esp-idf-v5.1.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32_Intership/IS_APP/build/partition_table/partition-table.bin D:/ESP32_Intership/IS_APP/build/IS_APP.bin"
+IS_APP.bin binary size 0xdb130 bytes. Smallest app partition is 0x100000 bytes. 0x24ed0 bytes (14%) free.
